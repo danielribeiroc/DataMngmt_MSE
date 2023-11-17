@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+neo4j
+.idea
 # C extensions
 *.so
 
