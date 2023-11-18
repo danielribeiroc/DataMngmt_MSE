@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e707eec48765b407622f9f97a88a93fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e707eec48765b407622f9f97a88a93fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e707eec48765b407622f9f97a88a93fa = L.map(
+                "map_e707eec48765b407622f9f97a88a93fa",
+                {
+                    center: [46.800663464, 8.222665776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08325f914a65f682e02bfc050b42be23 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_08325f914a65f682e02bfc050b42be23.addTo(map_e707eec48765b407622f9f97a88a93fa);
+    
+            var circle_d7a4fd6ae20f8000ad9276c41d9d7b57 = L.circle(
+                [47.39135, 8.051251],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_5b7b24dd847d26d2f4a96a4d855aa639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d73cd83139d52eebaf515ac46a3e23d0 = $(`<div id="html_d73cd83139d52eebaf515ac46a3e23d0" style="width: 100.0%; height: 100.0%;">Aarau</div>`)[0];
+                popup_5b7b24dd847d26d2f4a96a4d855aa639.setContent(html_d73cd83139d52eebaf515ac46a3e23d0);
+            
+        
+
+        circle_d7a4fd6ae20f8000ad9276c41d9d7b57.bindPopup(popup_5b7b24dd847d26d2f4a96a4d855aa639)
+        ;
+
+        
+    
+    
+            var circle_91766bc7ab0fd587e967b60bdbbdeae5 = L.circle(
+                [47.049152, 8.549482],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ac681537adc36a40eff51beb437985f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a83bc58f7941f316b32bfaedf3f7fa67 = $(`<div id="html_a83bc58f7941f316b32bfaedf3f7fa67" style="width: 100.0%; height: 100.0%;">Arth-Goldau</div>`)[0];
+                popup_ac681537adc36a40eff51beb437985f3.setContent(html_a83bc58f7941f316b32bfaedf3f7fa67);
+            
+        
+
+        circle_91766bc7ab0fd587e967b60bdbbdeae5.bindPopup(popup_ac681537adc36a40eff51beb437985f3)
+        ;
+
+        
+    
+    
+            var circle_3d8dc34e3e8219ebab87bfdac2e1cc4d = L.circle(
+                [47.546944, 7.59],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4f7acf1102600da08a4131a99ae206eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ae498e1f0b33494758a3cbd0ebd6747 = $(`<div id="html_3ae498e1f0b33494758a3cbd0ebd6747" style="width: 100.0%; height: 100.0%;">Basel</div>`)[0];
+                popup_4f7acf1102600da08a4131a99ae206eb.setContent(html_3ae498e1f0b33494758a3cbd0ebd6747);
+            
+        
+
+        circle_3d8dc34e3e8219ebab87bfdac2e1cc4d.bindPopup(popup_4f7acf1102600da08a4131a99ae206eb)
+        ;
+
+        
+    
+    
+            var circle_398e1a6c6c2daa23639840cf9edcb00b = L.circle(
+                [46.19544, 9.029505],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_060a8c9c1bdfd086e316fdc53b818749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8463deabe467bc80ae670e50193d6e0 = $(`<div id="html_b8463deabe467bc80ae670e50193d6e0" style="width: 100.0%; height: 100.0%;">Bellinzona</div>`)[0];
+                popup_060a8c9c1bdfd086e316fdc53b818749.setContent(html_b8463deabe467bc80ae670e50193d6e0);
+            
+        
+
+        circle_398e1a6c6c2daa23639840cf9edcb00b.bindPopup(popup_060a8c9c1bdfd086e316fdc53b818749)
+        ;
+
+        
+    
+    
+            var circle_cfc7490ac03900926e0c4e6f43b549fb = L.circle(
+                [46.948819, 7.439117],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d4069acf151437625547454f8644dfc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5748b84f933f01c6f25e2f2323bee22 = $(`<div id="html_b5748b84f933f01c6f25e2f2323bee22" style="width: 100.0%; height: 100.0%;">Bern</div>`)[0];
+                popup_d4069acf151437625547454f8644dfc5.setContent(html_b5748b84f933f01c6f25e2f2323bee22);
+            
+        
+
+        circle_cfc7490ac03900926e0c4e6f43b549fb.bindPopup(popup_d4069acf151437625547454f8644dfc5)
+        ;
+
+        
+    
+    
+            var circle_9d49591bf73189d93de58050d0bd5037 = L.circle(
+                [47.132885, 7.242918],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_c67fe401c7499bdf2cd06a60badd360c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bac5f910bac0c6ca94e02589f4fb0ab1 = $(`<div id="html_bac5f910bac0c6ca94e02589f4fb0ab1" style="width: 100.0%; height: 100.0%;">Biel/Bienne</div>`)[0];
+                popup_c67fe401c7499bdf2cd06a60badd360c.setContent(html_bac5f910bac0c6ca94e02589f4fb0ab1);
+            
+        
+
+        circle_9d49591bf73189d93de58050d0bd5037.bindPopup(popup_c67fe401c7499bdf2cd06a60badd360c)
+        ;
+
+        
+    
+    
+            var circle_4670e658ed7160e211d693e84d723029 = L.circle(
+                [46.319444, 7.988056],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_848c2eec3839098a45392a25a2fc0296 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d39b655385bfcadb89c3686a737fc58 = $(`<div id="html_1d39b655385bfcadb89c3686a737fc58" style="width: 100.0%; height: 100.0%;">Brig</div>`)[0];
+                popup_848c2eec3839098a45392a25a2fc0296.setContent(html_1d39b655385bfcadb89c3686a737fc58);
+            
+        
+
+        circle_4670e658ed7160e211d693e84d723029.bindPopup(popup_848c2eec3839098a45392a25a2fc0296)
+        ;
+
+        
+    
+    
+            var circle_6d88b4aa1a57b3fe216fe15e69eeabee = L.circle(
+                [45.83219, 9.031449],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8ef4574f3a3ccec05bf4eb138cded514 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f258dcca7f7179badeec1097ba87d1 = $(`<div id="html_81f258dcca7f7179badeec1097ba87d1" style="width: 100.0%; height: 100.0%;">Chiasso</div>`)[0];
+                popup_8ef4574f3a3ccec05bf4eb138cded514.setContent(html_81f258dcca7f7179badeec1097ba87d1);
+            
+        
+
+        circle_6d88b4aa1a57b3fe216fe15e69eeabee.bindPopup(popup_8ef4574f3a3ccec05bf4eb138cded514)
+        ;
+
+        
+    
+    
+            var circle_2dcd56c8d57650019a9fb313163e09d7 = L.circle(
+                [46.85308, 9.528919],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0adaf57b307c6865d0b037356e942282 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_600cb019974389b423b0c294e42fb64b = $(`<div id="html_600cb019974389b423b0c294e42fb64b" style="width: 100.0%; height: 100.0%;">Chur</div>`)[0];
+                popup_0adaf57b307c6865d0b037356e942282.setContent(html_600cb019974389b423b0c294e42fb64b);
+            
+        
+
+        circle_2dcd56c8d57650019a9fb313163e09d7.bindPopup(popup_0adaf57b307c6865d0b037356e942282)
+        ;
+
+        
+    
+    
+            var circle_3f0863564d93f64654057f172057805b = L.circle(
+                [47.361996, 7.350065],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_3bb2274a95bfe6fb1e8fb057a9532c86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fca25dee5032d976dde002a7f1ff4905 = $(`<div id="html_fca25dee5032d976dde002a7f1ff4905" style="width: 100.0%; height: 100.0%;">Delemont</div>`)[0];
+                popup_3bb2274a95bfe6fb1e8fb057a9532c86.setContent(html_fca25dee5032d976dde002a7f1ff4905);
+            
+        
+
+        circle_3f0863564d93f64654057f172057805b.bindPopup(popup_3bb2274a95bfe6fb1e8fb057a9532c86)
+        ;
+
+        
+    
+    
+            var circle_0b6a4fcd7a501d253e3a6c6edb1b9eaf = L.circle(
+                [46.803269, 7.151031],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_988197975c0ac5bb37846e4d74f61990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dc69d8dc7133019a67f579c4812248d = $(`<div id="html_4dc69d8dc7133019a67f579c4812248d" style="width: 100.0%; height: 100.0%;">Fribourg</div>`)[0];
+                popup_988197975c0ac5bb37846e4d74f61990.setContent(html_4dc69d8dc7133019a67f579c4812248d);
+            
+        
+
+        circle_0b6a4fcd7a501d253e3a6c6edb1b9eaf.bindPopup(popup_988197975c0ac5bb37846e4d74f61990)
+        ;
+
+        
+    
+    
+            var circle_46db7c9451d0d655ca027828d91d53e6 = L.circle(
+                [46.210217, 6.142447],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_61a526cf6d81720b611ef23fe0b1db5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff276d38e8ae7b06a63483fd8e8a836f = $(`<div id="html_ff276d38e8ae7b06a63483fd8e8a836f" style="width: 100.0%; height: 100.0%;">Geneve</div>`)[0];
+                popup_61a526cf6d81720b611ef23fe0b1db5d.setContent(html_ff276d38e8ae7b06a63483fd8e8a836f);
+            
+        
+
+        circle_46db7c9451d0d655ca027828d91d53e6.bindPopup(popup_61a526cf6d81720b611ef23fe0b1db5d)
+        ;
+
+        
+    
+    
+            var circle_248b7432f525f3277400099063d6e0f6 = L.circle(
+                [46.69, 7.868889],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f3de7d576329bad3f3ef35c99d1e6207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3053cef91e83775c500fa2f4d24dac0a = $(`<div id="html_3053cef91e83775c500fa2f4d24dac0a" style="width: 100.0%; height: 100.0%;">Interlaken</div>`)[0];
+                popup_f3de7d576329bad3f3ef35c99d1e6207.setContent(html_3053cef91e83775c500fa2f4d24dac0a);
+            
+        
+
+        circle_248b7432f525f3277400099063d6e0f6.bindPopup(popup_f3de7d576329bad3f3ef35c99d1e6207)
+        ;
+
+        
+    
+    
+            var circle_d7c96b1239808008e586886f136226ae = L.circle(
+                [47.658754, 9.177312],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_9918ed84723fefec9c7352f163561b91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_888319c7f40cfe32d47fa5faab64bd35 = $(`<div id="html_888319c7f40cfe32d47fa5faab64bd35" style="width: 100.0%; height: 100.0%;">Konstanz</div>`)[0];
+                popup_9918ed84723fefec9c7352f163561b91.setContent(html_888319c7f40cfe32d47fa5faab64bd35);
+            
+        
+
+        circle_d7c96b1239808008e586886f136226ae.bindPopup(popup_9918ed84723fefec9c7352f163561b91)
+        ;
+
+        
+    
+    
+            var circle_0cc37f9804de0c93ffae4ceb21483f17 = L.circle(
+                [46.516785, 6.629096],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4d2f35055411bcdbf118eda72cc6c160 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc9b29a35085862c5195418553ceb42 = $(`<div id="html_dbc9b29a35085862c5195418553ceb42" style="width: 100.0%; height: 100.0%;">Lausanne</div>`)[0];
+                popup_4d2f35055411bcdbf118eda72cc6c160.setContent(html_dbc9b29a35085862c5195418553ceb42);
+            
+        
+
+        circle_0cc37f9804de0c93ffae4ceb21483f17.bindPopup(popup_4d2f35055411bcdbf118eda72cc6c160)
+        ;
+
+        
+    
+    
+            var circle_06845efa20ef323bbc22e8a4007bc854 = L.circle(
+                [47.484461, 7.731367],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_86957d09b9a2443840e1bad258dd132a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbc82c0a6144e4294951534bba0f0fb0 = $(`<div id="html_fbc82c0a6144e4294951534bba0f0fb0" style="width: 100.0%; height: 100.0%;">Liestal</div>`)[0];
+                popup_86957d09b9a2443840e1bad258dd132a.setContent(html_fbc82c0a6144e4294951534bba0f0fb0);
+            
+        
+
+        circle_06845efa20ef323bbc22e8a4007bc854.bindPopup(popup_86957d09b9a2443840e1bad258dd132a)
+        ;
+
+        
+    
+    
+            var circle_ef3aa76bd36561841304cfeb1d6e3519 = L.circle(
+                [47.050169, 8.310161],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_b72b6dfdfb79f495b8e8432f7de79e5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1461fe7c183e3eea1b077c47e6c3b57 = $(`<div id="html_f1461fe7c183e3eea1b077c47e6c3b57" style="width: 100.0%; height: 100.0%;">Luzern</div>`)[0];
+                popup_b72b6dfdfb79f495b8e8432f7de79e5a.setContent(html_f1461fe7c183e3eea1b077c47e6c3b57);
+            
+        
+
+        circle_ef3aa76bd36561841304cfeb1d6e3519.bindPopup(popup_b72b6dfdfb79f495b8e8432f7de79e5a)
+        ;
+
+        
+    
+    
+            var circle_0deec7e949cdd27ff2d7769d89724a99 = L.circle(
+                [46.00551, 8.946878],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_da5b891cfe39954a6437275a68682f08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_800c7052e804ffc94df36fa0f8e621a2 = $(`<div id="html_800c7052e804ffc94df36fa0f8e621a2" style="width: 100.0%; height: 100.0%;">Lugano</div>`)[0];
+                popup_da5b891cfe39954a6437275a68682f08.setContent(html_800c7052e804ffc94df36fa0f8e621a2);
+            
+        
+
+        circle_0deec7e949cdd27ff2d7769d89724a99.bindPopup(popup_da5b891cfe39954a6437275a68682f08)
+        ;
+
+        
+    
+    
+            var circle_093627cbf723afac27fea54d9e88a2e6 = L.circle(
+                [46.435875, 6.910434],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_c3473ca202faee9f3fa5bb85832beb59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_002f73945f553d5c7368e0da9858febd = $(`<div id="html_002f73945f553d5c7368e0da9858febd" style="width: 100.0%; height: 100.0%;">Montreux</div>`)[0];
+                popup_c3473ca202faee9f3fa5bb85832beb59.setContent(html_002f73945f553d5c7368e0da9858febd);
+            
+        
+
+        circle_093627cbf723afac27fea54d9e88a2e6.bindPopup(popup_c3473ca202faee9f3fa5bb85832beb59)
+        ;
+
+        
+    
+    
+            var circle_a9d65db29f0e337a7950d85fdbd9efe2 = L.circle(
+                [46.996727, 6.935713],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_66858c27f6718e5928f13d96fdd48116 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d20d7ade841fdbcc207b20a5a8b2439 = $(`<div id="html_9d20d7ade841fdbcc207b20a5a8b2439" style="width: 100.0%; height: 100.0%;">Neuchatel</div>`)[0];
+                popup_66858c27f6718e5928f13d96fdd48116.setContent(html_9d20d7ade841fdbcc207b20a5a8b2439);
+            
+        
+
+        circle_a9d65db29f0e337a7950d85fdbd9efe2.bindPopup(popup_66858c27f6718e5928f13d96fdd48116)
+        ;
+
+        
+    
+    
+            var circle_2690ee59535fc739b21550fb172bf362 = L.circle(
+                [47.35193, 7.907683],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4171507f32b9568687cf92c4a8689b1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0f08ec7bb9710e0b9ba28fd7b2373be = $(`<div id="html_d0f08ec7bb9710e0b9ba28fd7b2373be" style="width: 100.0%; height: 100.0%;">Olten</div>`)[0];
+                popup_4171507f32b9568687cf92c4a8689b1d.setContent(html_d0f08ec7bb9710e0b9ba28fd7b2373be);
+            
+        
+
+        circle_2690ee59535fc739b21550fb172bf362.bindPopup(popup_4171507f32b9568687cf92c4a8689b1d)
+        ;
+
+        
+    
+    
+            var circle_ef734ba091ab90bc04090a92c31188c0 = L.circle(
+                [47.565556, 9.379444],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f218110b9ff2ec6286e99704b97ed84e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94ac71df4277206cf0033d7fb45a9038 = $(`<div id="html_94ac71df4277206cf0033d7fb45a9038" style="width: 100.0%; height: 100.0%;">Romanshorn</div>`)[0];
+                popup_f218110b9ff2ec6286e99704b97ed84e.setContent(html_94ac71df4277206cf0033d7fb45a9038);
+            
+        
+
+        circle_ef734ba091ab90bc04090a92c31188c0.bindPopup(popup_f218110b9ff2ec6286e99704b97ed84e)
+        ;
+
+        
+    
+    
+            var circle_0b839753ece8bb79ff09fb3a2a915386 = L.circle(
+                [46.69351, 6.911815],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8085eb4d4d13a2d6de5e4bec97816d07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b92d8becf3482dde1c07cbef70da7c1 = $(`<div id="html_3b92d8becf3482dde1c07cbef70da7c1" style="width: 100.0%; height: 100.0%;">Romont</div>`)[0];
+                popup_8085eb4d4d13a2d6de5e4bec97816d07.setContent(html_3b92d8becf3482dde1c07cbef70da7c1);
+            
+        
+
+        circle_0b839753ece8bb79ff09fb3a2a915386.bindPopup(popup_8085eb4d4d13a2d6de5e4bec97816d07)
+        ;
+
+        
+    
+    
+            var circle_7e20527bba00d5f1a824cbe002790dfe = L.circle(
+                [47.423183, 9.369873],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_fcd32e67b68d0f97861e402abf7585d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64948e1a5c4496810b88a6895072cff9 = $(`<div id="html_64948e1a5c4496810b88a6895072cff9" style="width: 100.0%; height: 100.0%;">St.Gallen</div>`)[0];
+                popup_fcd32e67b68d0f97861e402abf7585d9.setContent(html_64948e1a5c4496810b88a6895072cff9);
+            
+        
+
+        circle_7e20527bba00d5f1a824cbe002790dfe.bindPopup(popup_fcd32e67b68d0f97861e402abf7585d9)
+        ;
+
+        
+    
+    
+            var circle_ff1829f0f5d607649d95229a11e10500 = L.circle(
+                [47.698282, 8.632756],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_cacf1b1d5d50a222bddc10b9238b8047 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ce5c3e590159c875d6dbac0c7326f3e = $(`<div id="html_8ce5c3e590159c875d6dbac0c7326f3e" style="width: 100.0%; height: 100.0%;">Schaffhausen</div>`)[0];
+                popup_cacf1b1d5d50a222bddc10b9238b8047.setContent(html_8ce5c3e590159c875d6dbac0c7326f3e);
+            
+        
+
+        circle_ff1829f0f5d607649d95229a11e10500.bindPopup(popup_cacf1b1d5d50a222bddc10b9238b8047)
+        ;
+
+        
+    
+    
+            var circle_2766f922ce80f9dcd4316db94a08dc80 = L.circle(
+                [46.227553, 7.359197],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_46d8fa38a424bf88c5764cc1c77851b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bdea97a31837fd8479ec9dc6a857435 = $(`<div id="html_4bdea97a31837fd8479ec9dc6a857435" style="width: 100.0%; height: 100.0%;">Sion</div>`)[0];
+                popup_46d8fa38a424bf88c5764cc1c77851b5.setContent(html_4bdea97a31837fd8479ec9dc6a857435);
+            
+        
+
+        circle_2766f922ce80f9dcd4316db94a08dc80.bindPopup(popup_46d8fa38a424bf88c5764cc1c77851b5)
+        ;
+
+        
+    
+    
+            var circle_0c9dd8e3612d344942f87a1999cc635b = L.circle(
+                [47.204178, 7.542687],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8389f22f6070ebb1ac5a23d440546ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_088fba54c0d06c963680cae7dd889223 = $(`<div id="html_088fba54c0d06c963680cae7dd889223" style="width: 100.0%; height: 100.0%;">Solothurn</div>`)[0];
+                popup_8389f22f6070ebb1ac5a23d440546ca9.setContent(html_088fba54c0d06c963680cae7dd889223);
+            
+        
+
+        circle_0c9dd8e3612d344942f87a1999cc635b.bindPopup(popup_8389f22f6070ebb1ac5a23d440546ca9)
+        ;
+
+        
+    
+    
+            var circle_43d70d63c0ff6af0bd19a574180a4e73 = L.circle(
+                [46.754853, 7.629606],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_a8a38e6983c978fad1e9821a634f6ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_479c4319d40824522613a6b32e1bf781 = $(`<div id="html_479c4319d40824522613a6b32e1bf781" style="width: 100.0%; height: 100.0%;">Thun</div>`)[0];
+                popup_a8a38e6983c978fad1e9821a634f6ae6.setContent(html_479c4319d40824522613a6b32e1bf781);
+            
+        
+
+        circle_43d70d63c0ff6af0bd19a574180a4e73.bindPopup(popup_a8a38e6983c978fad1e9821a634f6ae6)
+        ;
+
+        
+    
+    
+            var circle_b3c0aae7de848f7a4059c7299ca86a2f = L.circle(
+                [46.293889, 7.881389],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d0fdde643a986002b7a3368987bd272a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0b0ae595cf775dfd7926a276d7501bb = $(`<div id="html_e0b0ae595cf775dfd7926a276d7501bb" style="width: 100.0%; height: 100.0%;">Visp</div>`)[0];
+                popup_d0fdde643a986002b7a3368987bd272a.setContent(html_e0b0ae595cf775dfd7926a276d7501bb);
+            
+        
+
+        circle_b3c0aae7de848f7a4059c7299ca86a2f.bindPopup(popup_d0fdde643a986002b7a3368987bd272a)
+        ;
+
+        
+    
+    
+            var circle_06a3c816c31a2f3e4f50dc0153f1f929 = L.circle(
+                [47.462389, 9.041],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d8e708a9a995d76b3cd2a674d692bbda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acfe8f2f2f17d2f9061fadee922aa61d = $(`<div id="html_acfe8f2f2f17d2f9061fadee922aa61d" style="width: 100.0%; height: 100.0%;">Wil</div>`)[0];
+                popup_d8e708a9a995d76b3cd2a674d692bbda.setContent(html_acfe8f2f2f17d2f9061fadee922aa61d);
+            
+        
+
+        circle_06a3c816c31a2f3e4f50dc0153f1f929.bindPopup(popup_d8e708a9a995d76b3cd2a674d692bbda)
+        ;
+
+        
+    
+    
+            var circle_63bc20363d249f5732fcef8d00c1fb68 = L.circle(
+                [47.500328, 8.723786],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_82aa4855a3e96241f5df391d938619a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b071b383833809235f7f4e3da4e18325 = $(`<div id="html_b071b383833809235f7f4e3da4e18325" style="width: 100.0%; height: 100.0%;">Winterthur</div>`)[0];
+                popup_82aa4855a3e96241f5df391d938619a8.setContent(html_b071b383833809235f7f4e3da4e18325);
+            
+        
+
+        circle_63bc20363d249f5732fcef8d00c1fb68.bindPopup(popup_82aa4855a3e96241f5df391d938619a8)
+        ;
+
+        
+    
+    
+            var circle_60ff5120a5adc2e047786ef8790dc3c7 = L.circle(
+                [46.781876, 6.641153],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_94fd149d5b7f9e90face6b093c133d8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ee5fc2d352bb2972efecdd755f05c45 = $(`<div id="html_8ee5fc2d352bb2972efecdd755f05c45" style="width: 100.0%; height: 100.0%;">Yverdon-les-Bains</div>`)[0];
+                popup_94fd149d5b7f9e90face6b093c133d8e.setContent(html_8ee5fc2d352bb2972efecdd755f05c45);
+            
+        
+
+        circle_60ff5120a5adc2e047786ef8790dc3c7.bindPopup(popup_94fd149d5b7f9e90face6b093c133d8e)
+        ;
+
+        
+    
+    
+            var circle_03f0d7845a7af9a43ae0b650dd284266 = L.circle(
+                [47.173622, 8.51529],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_9d014ece0a7cbcde9feb96ee76a005ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e5265a4e13c78afc009d727a8d80eb5 = $(`<div id="html_0e5265a4e13c78afc009d727a8d80eb5" style="width: 100.0%; height: 100.0%;">Zug</div>`)[0];
+                popup_9d014ece0a7cbcde9feb96ee76a005ee.setContent(html_0e5265a4e13c78afc009d727a8d80eb5);
+            
+        
+
+        circle_03f0d7845a7af9a43ae0b650dd284266.bindPopup(popup_9d014ece0a7cbcde9feb96ee76a005ee)
+        ;
+
+        
+    
+    
+            var circle_934bb85a1d767362be98cbc315c0d598 = L.circle(
+                [47.3641, 8.530788],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_652e997778110a47bc68c790bbe3df28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a0400742a15be3caf3548fa6dae35d2 = $(`<div id="html_4a0400742a15be3caf3548fa6dae35d2" style="width: 100.0%; height: 100.0%;">Zurich</div>`)[0];
+                popup_652e997778110a47bc68c790bbe3df28.setContent(html_4a0400742a15be3caf3548fa6dae35d2);
+            
+        
+
+        circle_934bb85a1d767362be98cbc315c0d598.bindPopup(popup_652e997778110a47bc68c790bbe3df28)
+        ;
+
+        
+    
+    
+            var poly_line_1188c410f5de83334b33bde68290e664 = L.polyline(
+                [[47.049152, 8.549482], [46.19544, 9.029505]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ee7f69ec067b67970bae1032bd63a399 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b56059670f0b4748af22e4f00fd58c91 = $(`<div id="html_b56059670f0b4748af22e4f00fd58c91" style="width: 100.0%; height: 100.0%;">Railway: Arth-Goldau to Bellinzona</div>`)[0];
+                popup_ee7f69ec067b67970bae1032bd63a399.setContent(html_b56059670f0b4748af22e4f00fd58c91);
+            
+        
+
+        poly_line_1188c410f5de83334b33bde68290e664.bindPopup(popup_ee7f69ec067b67970bae1032bd63a399)
+        ;
+
+        
+    
+    
+            var poly_line_9760021180d8b613275d9ab1e5f4e8bc = L.polyline(
+                [[46.948819, 7.439117], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_1dea307ff6fbcdf5381868f033303845 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3277ffb8223c9f40979ce3b3c3a6149b = $(`<div id="html_3277ffb8223c9f40979ce3b3c3a6149b" style="width: 100.0%; height: 100.0%;">Railway: Bern to Biel/Bienne</div>`)[0];
+                popup_1dea307ff6fbcdf5381868f033303845.setContent(html_3277ffb8223c9f40979ce3b3c3a6149b);
+            
+        
+
+        poly_line_9760021180d8b613275d9ab1e5f4e8bc.bindPopup(popup_1dea307ff6fbcdf5381868f033303845)
+        ;
+
+        
+    
+    
+            var poly_line_17f0adfa648bdfc263054104e46029ba = L.polyline(
+                [[46.319444, 7.988056], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8e1ced794e79f425d020d15ae6cd521c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c2e7f94dc6c8c71f22464000234d7c7 = $(`<div id="html_4c2e7f94dc6c8c71f22464000234d7c7" style="width: 100.0%; height: 100.0%;">Railway: Brig to Chur</div>`)[0];
+                popup_8e1ced794e79f425d020d15ae6cd521c.setContent(html_4c2e7f94dc6c8c71f22464000234d7c7);
+            
+        
+
+        poly_line_17f0adfa648bdfc263054104e46029ba.bindPopup(popup_8e1ced794e79f425d020d15ae6cd521c)
+        ;
+
+        
+    
+    
+            var poly_line_f4f83de0a4d18a8c2d348aa725079071 = L.polyline(
+                [[47.132885, 7.242918], [47.361996, 7.350065]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ee9bb2d1c488e26f5cc60a2cf0fd2d93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1380c33d3ca21c89bc92ac78e55d7480 = $(`<div id="html_1380c33d3ca21c89bc92ac78e55d7480" style="width: 100.0%; height: 100.0%;">Railway: Biel/Bienne to Delemont</div>`)[0];
+                popup_ee9bb2d1c488e26f5cc60a2cf0fd2d93.setContent(html_1380c33d3ca21c89bc92ac78e55d7480);
+            
+        
+
+        poly_line_f4f83de0a4d18a8c2d348aa725079071.bindPopup(popup_ee9bb2d1c488e26f5cc60a2cf0fd2d93)
+        ;
+
+        
+    
+    
+            var poly_line_732391744ea50a00d3ee970bf9064d73 = L.polyline(
+                [[47.546944, 7.59], [47.361996, 7.350065]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_2b4580b9fca5a747b88c08d51150e286 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21c69826da508df3f29eabce240faad0 = $(`<div id="html_21c69826da508df3f29eabce240faad0" style="width: 100.0%; height: 100.0%;">Railway: Basel to Delemont</div>`)[0];
+                popup_2b4580b9fca5a747b88c08d51150e286.setContent(html_21c69826da508df3f29eabce240faad0);
+            
+        
+
+        poly_line_732391744ea50a00d3ee970bf9064d73.bindPopup(popup_2b4580b9fca5a747b88c08d51150e286)
+        ;
+
+        
+    
+    
+            var poly_line_6d5023334613400467482c42138b835a = L.polyline(
+                [[46.948819, 7.439117], [46.803269, 7.151031]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f8b02a8a888b15976b1ed28a4b4acf8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac59443bc3dda5cfa287b7ef4accc3c2 = $(`<div id="html_ac59443bc3dda5cfa287b7ef4accc3c2" style="width: 100.0%; height: 100.0%;">Railway: Bern to Fribourg</div>`)[0];
+                popup_f8b02a8a888b15976b1ed28a4b4acf8b.setContent(html_ac59443bc3dda5cfa287b7ef4accc3c2);
+            
+        
+
+        poly_line_6d5023334613400467482c42138b835a.bindPopup(popup_f8b02a8a888b15976b1ed28a4b4acf8b)
+        ;
+
+        
+    
+    
+            var poly_line_d616fd3c8d92107e5d3486a81f650e3c = L.polyline(
+                [[46.210217, 6.142447], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0bfc02044621b3f7c7601e28562c83ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cebc019feec79aca3c811ec6f2760646 = $(`<div id="html_cebc019feec79aca3c811ec6f2760646" style="width: 100.0%; height: 100.0%;">Railway: Geneve to Lausanne</div>`)[0];
+                popup_0bfc02044621b3f7c7601e28562c83ce.setContent(html_cebc019feec79aca3c811ec6f2760646);
+            
+        
+
+        poly_line_d616fd3c8d92107e5d3486a81f650e3c.bindPopup(popup_0bfc02044621b3f7c7601e28562c83ce)
+        ;
+
+        
+    
+    
+            var poly_line_48fc051b0885846e1f72cc3df206ffb8 = L.polyline(
+                [[47.546944, 7.59], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_122f92dd1c3079b7296fe95fe2a1576d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f43b155180ae5f9731c4242abac8a39 = $(`<div id="html_1f43b155180ae5f9731c4242abac8a39" style="width: 100.0%; height: 100.0%;">Railway: Basel to Liestal</div>`)[0];
+                popup_122f92dd1c3079b7296fe95fe2a1576d.setContent(html_1f43b155180ae5f9731c4242abac8a39);
+            
+        
+
+        poly_line_48fc051b0885846e1f72cc3df206ffb8.bindPopup(popup_122f92dd1c3079b7296fe95fe2a1576d)
+        ;
+
+        
+    
+    
+            var poly_line_376f7b0d2cb5d505fe9688d599fc8894 = L.polyline(
+                [[47.39135, 8.051251], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_aca1ff8fb4a67752c4660fa0fde199a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b1d37b0f3e85eda726a346560336e0e = $(`<div id="html_0b1d37b0f3e85eda726a346560336e0e" style="width: 100.0%; height: 100.0%;">Railway: Aarau to Liestal</div>`)[0];
+                popup_aca1ff8fb4a67752c4660fa0fde199a0.setContent(html_0b1d37b0f3e85eda726a346560336e0e);
+            
+        
+
+        poly_line_376f7b0d2cb5d505fe9688d599fc8894.bindPopup(popup_aca1ff8fb4a67752c4660fa0fde199a0)
+        ;
+
+        
+    
+    
+            var poly_line_7f3793ed35b97be01316442b842cfb80 = L.polyline(
+                [[46.69, 7.868889], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_9429a18f66481ad82ee50b8051b4a80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c65ba7114a68b46af194ebc232d6ae0e = $(`<div id="html_c65ba7114a68b46af194ebc232d6ae0e" style="width: 100.0%; height: 100.0%;">Railway: Interlaken to Luzern</div>`)[0];
+                popup_9429a18f66481ad82ee50b8051b4a80b.setContent(html_c65ba7114a68b46af194ebc232d6ae0e);
+            
+        
+
+        poly_line_7f3793ed35b97be01316442b842cfb80.bindPopup(popup_9429a18f66481ad82ee50b8051b4a80b)
+        ;
+
+        
+    
+    
+            var poly_line_89329e84a3162b8c91675e609a7c4114 = L.polyline(
+                [[46.948819, 7.439117], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f12b06fbde62548bc1d16e098ecb6031 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07c62119b4874a826bdba51b0f5853ff = $(`<div id="html_07c62119b4874a826bdba51b0f5853ff" style="width: 100.0%; height: 100.0%;">Railway: Bern to Luzern</div>`)[0];
+                popup_f12b06fbde62548bc1d16e098ecb6031.setContent(html_07c62119b4874a826bdba51b0f5853ff);
+            
+        
+
+        poly_line_89329e84a3162b8c91675e609a7c4114.bindPopup(popup_f12b06fbde62548bc1d16e098ecb6031)
+        ;
+
+        
+    
+    
+            var poly_line_146730dff8c612d7816af4d203053b89 = L.polyline(
+                [[47.049152, 8.549482], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0b2624bb78c5b73710470513dea61cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e62418e817f3704800ff46f4ee8ee05 = $(`<div id="html_1e62418e817f3704800ff46f4ee8ee05" style="width: 100.0%; height: 100.0%;">Railway: Arth-Goldau to Luzern</div>`)[0];
+                popup_0b2624bb78c5b73710470513dea61cf9.setContent(html_1e62418e817f3704800ff46f4ee8ee05);
+            
+        
+
+        poly_line_146730dff8c612d7816af4d203053b89.bindPopup(popup_0b2624bb78c5b73710470513dea61cf9)
+        ;
+
+        
+    
+    
+            var poly_line_e3da86b0698c11252781506f393eaed0 = L.polyline(
+                [[45.83219, 9.031449], [46.00551, 8.946878]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_cae8c962519305025b38f982ef9d8811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c12ea6ff51b2450c7273683de79998b = $(`<div id="html_3c12ea6ff51b2450c7273683de79998b" style="width: 100.0%; height: 100.0%;">Railway: Chiasso to Lugano</div>`)[0];
+                popup_cae8c962519305025b38f982ef9d8811.setContent(html_3c12ea6ff51b2450c7273683de79998b);
+            
+        
+
+        poly_line_e3da86b0698c11252781506f393eaed0.bindPopup(popup_cae8c962519305025b38f982ef9d8811)
+        ;
+
+        
+    
+    
+            var poly_line_be9c527294871b2a031d31c32778b0e7 = L.polyline(
+                [[46.19544, 9.029505], [46.00551, 8.946878]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_5c70151ab428d39072843ef63ed515b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2667729aa522a3e07cbef751fc06cf99 = $(`<div id="html_2667729aa522a3e07cbef751fc06cf99" style="width: 100.0%; height: 100.0%;">Railway: Bellinzona to Lugano</div>`)[0];
+                popup_5c70151ab428d39072843ef63ed515b5.setContent(html_2667729aa522a3e07cbef751fc06cf99);
+            
+        
+
+        poly_line_be9c527294871b2a031d31c32778b0e7.bindPopup(popup_5c70151ab428d39072843ef63ed515b5)
+        ;
+
+        
+    
+    
+            var poly_line_51d4f15a224f4e1bc7f913bcc294fec4 = L.polyline(
+                [[46.516785, 6.629096], [46.435875, 6.910434]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_81f4b6767c32dc4306c2e26296df0182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8637b29344f074d430bedad34a63472a = $(`<div id="html_8637b29344f074d430bedad34a63472a" style="width: 100.0%; height: 100.0%;">Railway: Lausanne to Montreux</div>`)[0];
+                popup_81f4b6767c32dc4306c2e26296df0182.setContent(html_8637b29344f074d430bedad34a63472a);
+            
+        
+
+        poly_line_51d4f15a224f4e1bc7f913bcc294fec4.bindPopup(popup_81f4b6767c32dc4306c2e26296df0182)
+        ;
+
+        
+    
+    
+            var poly_line_ac4bc30376ed32ffaf1f3704ab0df8d8 = L.polyline(
+                [[47.132885, 7.242918], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_18fdb41bde4cb4b99c4e1a26c9efd064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb9dd3e4293cc2ea1a23aa07fe2f651c = $(`<div id="html_eb9dd3e4293cc2ea1a23aa07fe2f651c" style="width: 100.0%; height: 100.0%;">Railway: Biel/Bienne to Neuchatel</div>`)[0];
+                popup_18fdb41bde4cb4b99c4e1a26c9efd064.setContent(html_eb9dd3e4293cc2ea1a23aa07fe2f651c);
+            
+        
+
+        poly_line_ac4bc30376ed32ffaf1f3704ab0df8d8.bindPopup(popup_18fdb41bde4cb4b99c4e1a26c9efd064)
+        ;
+
+        
+    
+    
+            var poly_line_a77aa42e3b17b1498de4c20b0f5b4d25 = L.polyline(
+                [[46.948819, 7.439117], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_1caccf607ffc8e3213ddccc0f170e1fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f77ff5becae1aaaafd5eaf5310c1f885 = $(`<div id="html_f77ff5becae1aaaafd5eaf5310c1f885" style="width: 100.0%; height: 100.0%;">Railway: Bern to Neuchatel</div>`)[0];
+                popup_1caccf607ffc8e3213ddccc0f170e1fe.setContent(html_f77ff5becae1aaaafd5eaf5310c1f885);
+            
+        
+
+        poly_line_a77aa42e3b17b1498de4c20b0f5b4d25.bindPopup(popup_1caccf607ffc8e3213ddccc0f170e1fe)
+        ;
+
+        
+    
+    
+            var poly_line_ab74da0a2b5d3e24869757775b28ce72 = L.polyline(
+                [[47.050169, 8.310161], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8ddc028d17777eab9bf43a1524563a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a139d039968ec5c6e0959a517492701 = $(`<div id="html_8a139d039968ec5c6e0959a517492701" style="width: 100.0%; height: 100.0%;">Railway: Luzern to Olten</div>`)[0];
+                popup_8ddc028d17777eab9bf43a1524563a57.setContent(html_8a139d039968ec5c6e0959a517492701);
+            
+        
+
+        poly_line_ab74da0a2b5d3e24869757775b28ce72.bindPopup(popup_8ddc028d17777eab9bf43a1524563a57)
+        ;
+
+        
+    
+    
+            var poly_line_489761fd1e0d8f5bb40a97c5630da6a5 = L.polyline(
+                [[47.484461, 7.731367], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_c6a0f1b161dbbcc9df5f79ab9f402e16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_017e47c509e53870e220742cab5fff26 = $(`<div id="html_017e47c509e53870e220742cab5fff26" style="width: 100.0%; height: 100.0%;">Railway: Liestal to Olten</div>`)[0];
+                popup_c6a0f1b161dbbcc9df5f79ab9f402e16.setContent(html_017e47c509e53870e220742cab5fff26);
+            
+        
+
+        poly_line_489761fd1e0d8f5bb40a97c5630da6a5.bindPopup(popup_c6a0f1b161dbbcc9df5f79ab9f402e16)
+        ;
+
+        
+    
+    
+            var poly_line_8bfc8dd89b4346515c7f32db841acb92 = L.polyline(
+                [[46.948819, 7.439117], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_a522cca7a68b79f60c0bfe2af3609d25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7682e2aca6fcb4f0e6f4598d1c5210b2 = $(`<div id="html_7682e2aca6fcb4f0e6f4598d1c5210b2" style="width: 100.0%; height: 100.0%;">Railway: Bern to Olten</div>`)[0];
+                popup_a522cca7a68b79f60c0bfe2af3609d25.setContent(html_7682e2aca6fcb4f0e6f4598d1c5210b2);
+            
+        
+
+        poly_line_8bfc8dd89b4346515c7f32db841acb92.bindPopup(popup_a522cca7a68b79f60c0bfe2af3609d25)
+        ;
+
+        
+    
+    
+            var poly_line_29e98502361021b0a97b2aae4e306428 = L.polyline(
+                [[47.39135, 8.051251], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f233e9f19dd1451199a1384178992a6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_349b706e664271ee9d2fab20a8f4e27b = $(`<div id="html_349b706e664271ee9d2fab20a8f4e27b" style="width: 100.0%; height: 100.0%;">Railway: Aarau to Olten</div>`)[0];
+                popup_f233e9f19dd1451199a1384178992a6d.setContent(html_349b706e664271ee9d2fab20a8f4e27b);
+            
+        
+
+        poly_line_29e98502361021b0a97b2aae4e306428.bindPopup(popup_f233e9f19dd1451199a1384178992a6d)
+        ;
+
+        
+    
+    
+            var poly_line_917344e0242344dd8fdf78d83138fa11 = L.polyline(
+                [[47.658754, 9.177312], [47.565556, 9.379444]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_baf513c6b70762fec39c9dfdd2333636 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_387d423ec3296ff87cf1d9b8c8415214 = $(`<div id="html_387d423ec3296ff87cf1d9b8c8415214" style="width: 100.0%; height: 100.0%;">Railway: Konstanz to Romanshorn</div>`)[0];
+                popup_baf513c6b70762fec39c9dfdd2333636.setContent(html_387d423ec3296ff87cf1d9b8c8415214);
+            
+        
+
+        poly_line_917344e0242344dd8fdf78d83138fa11.bindPopup(popup_baf513c6b70762fec39c9dfdd2333636)
+        ;
+
+        
+    
+    
+            var poly_line_0a5a7296ac37e7ab54db50d0c9d44d2e = L.polyline(
+                [[46.516785, 6.629096], [46.69351, 6.911815]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_cd14d96100b81a5cde87e997e216b078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a26a8a3aeb70cff5e3fa3b1b828d2e0d = $(`<div id="html_a26a8a3aeb70cff5e3fa3b1b828d2e0d" style="width: 100.0%; height: 100.0%;">Railway: Lausanne to Romont</div>`)[0];
+                popup_cd14d96100b81a5cde87e997e216b078.setContent(html_a26a8a3aeb70cff5e3fa3b1b828d2e0d);
+            
+        
+
+        poly_line_0a5a7296ac37e7ab54db50d0c9d44d2e.bindPopup(popup_cd14d96100b81a5cde87e997e216b078)
+        ;
+
+        
+    
+    
+            var poly_line_9fc079f723e0bb744581eedbee7440fb = L.polyline(
+                [[46.803269, 7.151031], [46.69351, 6.911815]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f306365edb814fd6fe747d0002c51474 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af7df2c87b615109444d8535b0dba207 = $(`<div id="html_af7df2c87b615109444d8535b0dba207" style="width: 100.0%; height: 100.0%;">Railway: Fribourg to Romont</div>`)[0];
+                popup_f306365edb814fd6fe747d0002c51474.setContent(html_af7df2c87b615109444d8535b0dba207);
+            
+        
+
+        poly_line_9fc079f723e0bb744581eedbee7440fb.bindPopup(popup_f306365edb814fd6fe747d0002c51474)
+        ;
+
+        
+    
+    
+            var poly_line_6df39a3b295cc8e0032dd6988b1f31a8 = L.polyline(
+                [[47.565556, 9.379444], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0afac4d18f491c9bba5e7eab2b3061fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01e4c0bc7491bb0b9a5b11a3f5da8654 = $(`<div id="html_01e4c0bc7491bb0b9a5b11a3f5da8654" style="width: 100.0%; height: 100.0%;">Railway: Romanshorn to St.Gallen</div>`)[0];
+                popup_0afac4d18f491c9bba5e7eab2b3061fd.setContent(html_01e4c0bc7491bb0b9a5b11a3f5da8654);
+            
+        
+
+        poly_line_6df39a3b295cc8e0032dd6988b1f31a8.bindPopup(popup_0afac4d18f491c9bba5e7eab2b3061fd)
+        ;
+
+        
+    
+    
+            var poly_line_7487ec6193e479894f8ea41cf803f64e = L.polyline(
+                [[46.85308, 9.528919], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ca226acd502b66d8eec98f365c2e19a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70af1e07053978e8b7fdd243458b2e8a = $(`<div id="html_70af1e07053978e8b7fdd243458b2e8a" style="width: 100.0%; height: 100.0%;">Railway: Chur to St.Gallen</div>`)[0];
+                popup_ca226acd502b66d8eec98f365c2e19a7.setContent(html_70af1e07053978e8b7fdd243458b2e8a);
+            
+        
+
+        poly_line_7487ec6193e479894f8ea41cf803f64e.bindPopup(popup_ca226acd502b66d8eec98f365c2e19a7)
+        ;
+
+        
+    
+    
+            var poly_line_c287a1c9aa1f5da24dee90973c53fa8f = L.polyline(
+                [[46.435875, 6.910434], [46.227553, 7.359197]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_13f376f341b9e3d88aa4f6201107d4ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19e8af0a8c0570c721abdfa0eb922efe = $(`<div id="html_19e8af0a8c0570c721abdfa0eb922efe" style="width: 100.0%; height: 100.0%;">Railway: Montreux to Sion</div>`)[0];
+                popup_13f376f341b9e3d88aa4f6201107d4ee.setContent(html_19e8af0a8c0570c721abdfa0eb922efe);
+            
+        
+
+        poly_line_c287a1c9aa1f5da24dee90973c53fa8f.bindPopup(popup_13f376f341b9e3d88aa4f6201107d4ee)
+        ;
+
+        
+    
+    
+            var poly_line_7f174a63672ff7f622a732722f7a98bf = L.polyline(
+                [[47.35193, 7.907683], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d0d38cf6d1635e0e56ee2fc5325da191 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba48a72895b1ba0844f2015603dcaec4 = $(`<div id="html_ba48a72895b1ba0844f2015603dcaec4" style="width: 100.0%; height: 100.0%;">Railway: Olten to Solothurn</div>`)[0];
+                popup_d0d38cf6d1635e0e56ee2fc5325da191.setContent(html_ba48a72895b1ba0844f2015603dcaec4);
+            
+        
+
+        poly_line_7f174a63672ff7f622a732722f7a98bf.bindPopup(popup_d0d38cf6d1635e0e56ee2fc5325da191)
+        ;
+
+        
+    
+    
+            var poly_line_cfb6b45557240f0c82d201bccda1a7f4 = L.polyline(
+                [[47.132885, 7.242918], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_2426b8abcaa38383a64ce5f3064b90b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a41e39fbde00350c22200870c31d1265 = $(`<div id="html_a41e39fbde00350c22200870c31d1265" style="width: 100.0%; height: 100.0%;">Railway: Biel/Bienne to Solothurn</div>`)[0];
+                popup_2426b8abcaa38383a64ce5f3064b90b1.setContent(html_a41e39fbde00350c22200870c31d1265);
+            
+        
+
+        poly_line_cfb6b45557240f0c82d201bccda1a7f4.bindPopup(popup_2426b8abcaa38383a64ce5f3064b90b1)
+        ;
+
+        
+    
+    
+            var poly_line_15b701cf7cad958094b2dbfe43182cf3 = L.polyline(
+                [[46.948819, 7.439117], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4c7f986f47832a42afd070c763718c81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9eaffcb35e95a7ed7aa94464a6aa55e = $(`<div id="html_c9eaffcb35e95a7ed7aa94464a6aa55e" style="width: 100.0%; height: 100.0%;">Railway: Bern to Solothurn</div>`)[0];
+                popup_4c7f986f47832a42afd070c763718c81.setContent(html_c9eaffcb35e95a7ed7aa94464a6aa55e);
+            
+        
+
+        poly_line_15b701cf7cad958094b2dbfe43182cf3.bindPopup(popup_4c7f986f47832a42afd070c763718c81)
+        ;
+
+        
+    
+    
+            var poly_line_a9f77e7ff0e305203c21d4a79454d12a = L.polyline(
+                [[46.293889, 7.881389], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_7a84b3b2a0dceb0865e9ec5e244d33f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3d8260e677c3b6702d144693057428e = $(`<div id="html_c3d8260e677c3b6702d144693057428e" style="width: 100.0%; height: 100.0%;">Railway: Visp to Thun</div>`)[0];
+                popup_7a84b3b2a0dceb0865e9ec5e244d33f2.setContent(html_c3d8260e677c3b6702d144693057428e);
+            
+        
+
+        poly_line_a9f77e7ff0e305203c21d4a79454d12a.bindPopup(popup_7a84b3b2a0dceb0865e9ec5e244d33f2)
+        ;
+
+        
+    
+    
+            var poly_line_be2c7bbfe1d072b55c2673ae133c1ea9 = L.polyline(
+                [[46.435875, 6.910434], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f8ebf29aa8654ae2db19ffec289e0c05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_659e89af5ba287ff880e965fd668648f = $(`<div id="html_659e89af5ba287ff880e965fd668648f" style="width: 100.0%; height: 100.0%;">Railway: Montreux to Thun</div>`)[0];
+                popup_f8ebf29aa8654ae2db19ffec289e0c05.setContent(html_659e89af5ba287ff880e965fd668648f);
+            
+        
+
+        poly_line_be2c7bbfe1d072b55c2673ae133c1ea9.bindPopup(popup_f8ebf29aa8654ae2db19ffec289e0c05)
+        ;
+
+        
+    
+    
+            var poly_line_cfa859b99bf998d094abb9c3efc197a2 = L.polyline(
+                [[46.69, 7.868889], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0248817ca9f98ad552dfbf3b4e770809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbbbd8815cb8ea1beb4dc3c5adaaa990 = $(`<div id="html_bbbbd8815cb8ea1beb4dc3c5adaaa990" style="width: 100.0%; height: 100.0%;">Railway: Interlaken to Thun</div>`)[0];
+                popup_0248817ca9f98ad552dfbf3b4e770809.setContent(html_bbbbd8815cb8ea1beb4dc3c5adaaa990);
+            
+        
+
+        poly_line_cfa859b99bf998d094abb9c3efc197a2.bindPopup(popup_0248817ca9f98ad552dfbf3b4e770809)
+        ;
+
+        
+    
+    
+            var poly_line_5217940553ab31713de8a3771a8321a6 = L.polyline(
+                [[46.948819, 7.439117], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_dcd73db39c0f00d75be81bfce8801128 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b249a46b6631821485eb1c8331bf501 = $(`<div id="html_3b249a46b6631821485eb1c8331bf501" style="width: 100.0%; height: 100.0%;">Railway: Bern to Thun</div>`)[0];
+                popup_dcd73db39c0f00d75be81bfce8801128.setContent(html_3b249a46b6631821485eb1c8331bf501);
+            
+        
+
+        poly_line_5217940553ab31713de8a3771a8321a6.bindPopup(popup_dcd73db39c0f00d75be81bfce8801128)
+        ;
+
+        
+    
+    
+            var poly_line_58ce97b1152656cd690e1f81d1600278 = L.polyline(
+                [[46.227553, 7.359197], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_bcc0e612c780f25a2a24f445887ec143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b9ce154fe1e9855db24cc68769049ea = $(`<div id="html_1b9ce154fe1e9855db24cc68769049ea" style="width: 100.0%; height: 100.0%;">Railway: Sion to Visp</div>`)[0];
+                popup_bcc0e612c780f25a2a24f445887ec143.setContent(html_1b9ce154fe1e9855db24cc68769049ea);
+            
+        
+
+        poly_line_58ce97b1152656cd690e1f81d1600278.bindPopup(popup_bcc0e612c780f25a2a24f445887ec143)
+        ;
+
+        
+    
+    
+            var poly_line_de922db64d2b844860796fc09e3f07ba = L.polyline(
+                [[46.319444, 7.988056], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_e423b55cc26e5690c8d59340a4069e4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89002b667c4764b10d1832651a56f2ef = $(`<div id="html_89002b667c4764b10d1832651a56f2ef" style="width: 100.0%; height: 100.0%;">Railway: Brig to Visp</div>`)[0];
+                popup_e423b55cc26e5690c8d59340a4069e4e.setContent(html_89002b667c4764b10d1832651a56f2ef);
+            
+        
+
+        poly_line_de922db64d2b844860796fc09e3f07ba.bindPopup(popup_e423b55cc26e5690c8d59340a4069e4e)
+        ;
+
+        
+    
+    
+            var poly_line_7353863a10acb385c36fed02bd44fcdf = L.polyline(
+                [[47.423183, 9.369873], [47.462389, 9.041]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_dabd765579c007a540939b041a00afd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00e64c978a9f700ed2e615fdedbc03c2 = $(`<div id="html_00e64c978a9f700ed2e615fdedbc03c2" style="width: 100.0%; height: 100.0%;">Railway: St.Gallen to Wil</div>`)[0];
+                popup_dabd765579c007a540939b041a00afd0.setContent(html_00e64c978a9f700ed2e615fdedbc03c2);
+            
+        
+
+        poly_line_7353863a10acb385c36fed02bd44fcdf.bindPopup(popup_dabd765579c007a540939b041a00afd0)
+        ;
+
+        
+    
+    
+            var poly_line_7f5e707895c321f0f766d727f5b09357 = L.polyline(
+                [[47.462389, 9.041], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_eae34138be0012f527483d402a6ae049 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de27aaba20a95ac08dab4ec3db125c1 = $(`<div id="html_6de27aaba20a95ac08dab4ec3db125c1" style="width: 100.0%; height: 100.0%;">Railway: Wil to Winterthur</div>`)[0];
+                popup_eae34138be0012f527483d402a6ae049.setContent(html_6de27aaba20a95ac08dab4ec3db125c1);
+            
+        
+
+        poly_line_7f5e707895c321f0f766d727f5b09357.bindPopup(popup_eae34138be0012f527483d402a6ae049)
+        ;
+
+        
+    
+    
+            var poly_line_46277f6155a35cce840c9be063e4ecd9 = L.polyline(
+                [[47.658754, 9.177312], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d300107739ee4835a2258b79af43bbc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_987e1451bc0b5f752ea06ab6193b197d = $(`<div id="html_987e1451bc0b5f752ea06ab6193b197d" style="width: 100.0%; height: 100.0%;">Railway: Konstanz to Winterthur</div>`)[0];
+                popup_d300107739ee4835a2258b79af43bbc9.setContent(html_987e1451bc0b5f752ea06ab6193b197d);
+            
+        
+
+        poly_line_46277f6155a35cce840c9be063e4ecd9.bindPopup(popup_d300107739ee4835a2258b79af43bbc9)
+        ;
+
+        
+    
+    
+            var poly_line_3f2870324134665932b163508f5b4234 = L.polyline(
+                [[46.996727, 6.935713], [46.781876, 6.641153]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_36085bcac72122377561c5fa995646a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea992f7cc8aafabcdce2df04c9453379 = $(`<div id="html_ea992f7cc8aafabcdce2df04c9453379" style="width: 100.0%; height: 100.0%;">Railway: Neuchatel to Yverdon-les-Bains</div>`)[0];
+                popup_36085bcac72122377561c5fa995646a8.setContent(html_ea992f7cc8aafabcdce2df04c9453379);
+            
+        
+
+        poly_line_3f2870324134665932b163508f5b4234.bindPopup(popup_36085bcac72122377561c5fa995646a8)
+        ;
+
+        
+    
+    
+            var poly_line_d32dfbc594600de6f9ff9ed582fc40f4 = L.polyline(
+                [[46.516785, 6.629096], [46.781876, 6.641153]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ba980b582dae6e1b1f32193ed0a2339e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d29e0ae0f5002ef27bb2b72ecdf6c9a = $(`<div id="html_3d29e0ae0f5002ef27bb2b72ecdf6c9a" style="width: 100.0%; height: 100.0%;">Railway: Lausanne to Yverdon-les-Bains</div>`)[0];
+                popup_ba980b582dae6e1b1f32193ed0a2339e.setContent(html_3d29e0ae0f5002ef27bb2b72ecdf6c9a);
+            
+        
+
+        poly_line_d32dfbc594600de6f9ff9ed582fc40f4.bindPopup(popup_ba980b582dae6e1b1f32193ed0a2339e)
+        ;
+
+        
+    
+    
+            var poly_line_518c02b0e4a3e6dabc4763ae2cf790c6 = L.polyline(
+                [[47.050169, 8.310161], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_64a638389c76b58c216ed024d1168571 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_005e3986f1b340b9db0830685311ccfa = $(`<div id="html_005e3986f1b340b9db0830685311ccfa" style="width: 100.0%; height: 100.0%;">Railway: Luzern to Zug</div>`)[0];
+                popup_64a638389c76b58c216ed024d1168571.setContent(html_005e3986f1b340b9db0830685311ccfa);
+            
+        
+
+        poly_line_518c02b0e4a3e6dabc4763ae2cf790c6.bindPopup(popup_64a638389c76b58c216ed024d1168571)
+        ;
+
+        
+    
+    
+            var poly_line_e552bcb3cd4e997176e9918eeaddcafc = L.polyline(
+                [[47.049152, 8.549482], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_d505c0468887366d4902ac60aed015fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_680508b6a3ec31b687c187c13082f9c0 = $(`<div id="html_680508b6a3ec31b687c187c13082f9c0" style="width: 100.0%; height: 100.0%;">Railway: Arth-Goldau to Zug</div>`)[0];
+                popup_d505c0468887366d4902ac60aed015fc.setContent(html_680508b6a3ec31b687c187c13082f9c0);
+            
+        
+
+        poly_line_e552bcb3cd4e997176e9918eeaddcafc.bindPopup(popup_d505c0468887366d4902ac60aed015fc)
+        ;
+
+        
+    
+    
+            var poly_line_50fdbc20f8547bb6e1b408b6b8998a48 = L.polyline(
+                [[47.173622, 8.51529], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f599f825d81726c94fb19a0fae034507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f9edebb6cac0c17a65694546e9f1918 = $(`<div id="html_8f9edebb6cac0c17a65694546e9f1918" style="width: 100.0%; height: 100.0%;">Railway: Zug to Zurich</div>`)[0];
+                popup_f599f825d81726c94fb19a0fae034507.setContent(html_8f9edebb6cac0c17a65694546e9f1918);
+            
+        
+
+        poly_line_50fdbc20f8547bb6e1b408b6b8998a48.bindPopup(popup_f599f825d81726c94fb19a0fae034507)
+        ;
+
+        
+    
+    
+            var poly_line_a4409d1c5f95c83c797dac1420063b85 = L.polyline(
+                [[47.500328, 8.723786], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8ac100cfd3dc61b7d9fdc3841810d3e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b34cdd5d55817a41925ed62452206ece = $(`<div id="html_b34cdd5d55817a41925ed62452206ece" style="width: 100.0%; height: 100.0%;">Railway: Winterthur to Zurich</div>`)[0];
+                popup_8ac100cfd3dc61b7d9fdc3841810d3e6.setContent(html_b34cdd5d55817a41925ed62452206ece);
+            
+        
+
+        poly_line_a4409d1c5f95c83c797dac1420063b85.bindPopup(popup_8ac100cfd3dc61b7d9fdc3841810d3e6)
+        ;
+
+        
+    
+    
+            var poly_line_19db9e4aa000c8da7dd516aa38f7246a = L.polyline(
+                [[47.698282, 8.632756], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0f7cfc5ca0338f309051fcf58a293671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0890f9b67d33870015c245337ff44b97 = $(`<div id="html_0890f9b67d33870015c245337ff44b97" style="width: 100.0%; height: 100.0%;">Railway: Schaffhausen to Zurich</div>`)[0];
+                popup_0f7cfc5ca0338f309051fcf58a293671.setContent(html_0890f9b67d33870015c245337ff44b97);
+            
+        
+
+        poly_line_19db9e4aa000c8da7dd516aa38f7246a.bindPopup(popup_0f7cfc5ca0338f309051fcf58a293671)
+        ;
+
+        
+    
+    
+            var poly_line_ad01fd47cdf64cf2ca16c73f084d5f61 = L.polyline(
+                [[46.85308, 9.528919], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_40c06d1caab58a6fc76eb5d149cc9d59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2febe2816fc34ee57dcd77767d5c2164 = $(`<div id="html_2febe2816fc34ee57dcd77767d5c2164" style="width: 100.0%; height: 100.0%;">Railway: Chur to Zurich</div>`)[0];
+                popup_40c06d1caab58a6fc76eb5d149cc9d59.setContent(html_2febe2816fc34ee57dcd77767d5c2164);
+            
+        
+
+        poly_line_ad01fd47cdf64cf2ca16c73f084d5f61.bindPopup(popup_40c06d1caab58a6fc76eb5d149cc9d59)
+        ;
+
+        
+    
+    
+            var poly_line_70c8bb43309fd1d31219f06d61f0de8d = L.polyline(
+                [[47.546944, 7.59], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_07775d76e45c2afec7509d000ff26733 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d143cd82a54149cfcd7ea26ba5c690 = $(`<div id="html_77d143cd82a54149cfcd7ea26ba5c690" style="width: 100.0%; height: 100.0%;">Railway: Basel to Zurich</div>`)[0];
+                popup_07775d76e45c2afec7509d000ff26733.setContent(html_77d143cd82a54149cfcd7ea26ba5c690);
+            
+        
+
+        poly_line_70c8bb43309fd1d31219f06d61f0de8d.bindPopup(popup_07775d76e45c2afec7509d000ff26733)
+        ;
+
+        
+    
+    
+            var poly_line_2a50d7369d5c72799ab68f8c8f58021c = L.polyline(
+                [[47.39135, 8.051251], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_a97228860c836eb6a18a69e79aad926d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd71828ecb3a776c688f736d9c2e274b = $(`<div id="html_fd71828ecb3a776c688f736d9c2e274b" style="width: 100.0%; height: 100.0%;">Railway: Aarau to Zurich</div>`)[0];
+                popup_a97228860c836eb6a18a69e79aad926d.setContent(html_fd71828ecb3a776c688f736d9c2e274b);
+            
+        
+
+        poly_line_2a50d7369d5c72799ab68f8c8f58021c.bindPopup(popup_a97228860c836eb6a18a69e79aad926d)
+        ;
+
+        
+    
+    
+            var circle_1d28bebb4750f5df62b65bfc61fa95cf = L.circle(
+                [46.210217, 6.142447],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_f5869f514e10e3d3058d6954aacfe27a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d4ee46665b9c327811a23a59ad2a77a = $(`<div id="html_5d4ee46665b9c327811a23a59ad2a77a" style="width: 100.0%; height: 100.0%;">Geneve</div>`)[0];
+                popup_f5869f514e10e3d3058d6954aacfe27a.setContent(html_5d4ee46665b9c327811a23a59ad2a77a);
+            
+        
+
+        circle_1d28bebb4750f5df62b65bfc61fa95cf.bindPopup(popup_f5869f514e10e3d3058d6954aacfe27a)
+        ;
+
+        
+    
+    
+            var circle_aadace240bd025e35c9c2abf1e84e212 = L.circle(
+                [46.516785, 6.629096],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_ff9b1cfd7f3dc916ff0a57464c639583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f46b00f94a04f69311d1fc0d25161c70 = $(`<div id="html_f46b00f94a04f69311d1fc0d25161c70" style="width: 100.0%; height: 100.0%;">Lausanne</div>`)[0];
+                popup_ff9b1cfd7f3dc916ff0a57464c639583.setContent(html_f46b00f94a04f69311d1fc0d25161c70);
+            
+        
+
+        circle_aadace240bd025e35c9c2abf1e84e212.bindPopup(popup_ff9b1cfd7f3dc916ff0a57464c639583)
+        ;
+
+        
+    
+    
+            var circle_3a160cd2e0f0861e1f9dad1d53786b58 = L.circle(
+                [46.435875, 6.910434],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_0383725f380f272fada2721bb3bb1c4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8162399d565d18257658cd8ea3c7b941 = $(`<div id="html_8162399d565d18257658cd8ea3c7b941" style="width: 100.0%; height: 100.0%;">Montreux</div>`)[0];
+                popup_0383725f380f272fada2721bb3bb1c4b.setContent(html_8162399d565d18257658cd8ea3c7b941);
+            
+        
+
+        circle_3a160cd2e0f0861e1f9dad1d53786b58.bindPopup(popup_0383725f380f272fada2721bb3bb1c4b)
+        ;
+
+        
+    
+    
+            var circle_f5ee2adc8cc722e427c97a7d5d74699a = L.circle(
+                [46.227553, 7.359197],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_8ba007d98795f134c4ca4d7bd9a940d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efb5eaac7e3c5037a0fe4da515598b17 = $(`<div id="html_efb5eaac7e3c5037a0fe4da515598b17" style="width: 100.0%; height: 100.0%;">Sion</div>`)[0];
+                popup_8ba007d98795f134c4ca4d7bd9a940d5.setContent(html_efb5eaac7e3c5037a0fe4da515598b17);
+            
+        
+
+        circle_f5ee2adc8cc722e427c97a7d5d74699a.bindPopup(popup_8ba007d98795f134c4ca4d7bd9a940d5)
+        ;
+
+        
+    
+    
+            var circle_f85d1887b1fa0388f029e96c7f916afe = L.circle(
+                [46.293889, 7.881389],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4f0d387f4e8b81e1439effbae87d23d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c72c2c2171f53445550569e18fabd586 = $(`<div id="html_c72c2c2171f53445550569e18fabd586" style="width: 100.0%; height: 100.0%;">Visp</div>`)[0];
+                popup_4f0d387f4e8b81e1439effbae87d23d9.setContent(html_c72c2c2171f53445550569e18fabd586);
+            
+        
+
+        circle_f85d1887b1fa0388f029e96c7f916afe.bindPopup(popup_4f0d387f4e8b81e1439effbae87d23d9)
+        ;
+
+        
+    
+    
+            var circle_d51bef455d77925d7a12904270145301 = L.circle(
+                [46.319444, 7.988056],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_18b16cfdcbd4b732acd7b0f00fd5daca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df65d7a4dc0c945ecf9e265257d89bc6 = $(`<div id="html_df65d7a4dc0c945ecf9e265257d89bc6" style="width: 100.0%; height: 100.0%;">Brig</div>`)[0];
+                popup_18b16cfdcbd4b732acd7b0f00fd5daca.setContent(html_df65d7a4dc0c945ecf9e265257d89bc6);
+            
+        
+
+        circle_d51bef455d77925d7a12904270145301.bindPopup(popup_18b16cfdcbd4b732acd7b0f00fd5daca)
+        ;
+
+        
+    
+    
+            var circle_17cf6e922c0c533de1d61fb6130b24af = L.circle(
+                [46.85308, 9.528919],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+    
+        var popup_4d33aeab78cd470bb8aa3c47337279b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a243b6fa68702b08b4416ac82ad0fa47 = $(`<div id="html_a243b6fa68702b08b4416ac82ad0fa47" style="width: 100.0%; height: 100.0%;">Chur</div>`)[0];
+                popup_4d33aeab78cd470bb8aa3c47337279b4.setContent(html_a243b6fa68702b08b4416ac82ad0fa47);
+            
+        
+
+        circle_17cf6e922c0c533de1d61fb6130b24af.bindPopup(popup_4d33aeab78cd470bb8aa3c47337279b4)
+        ;
+
+        
+    
+    
+            var poly_line_f1deb5d0423fee19fbe6e270de548a60 = L.polyline(
+                [[46.210217, 6.142447], [46.516785, 6.629096], [46.435875, 6.910434], [46.227553, 7.359197], [46.293889, 7.881389], [46.319444, 7.988056], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3.0}
+            ).addTo(map_e707eec48765b407622f9f97a88a93fa);
+        
+</script>
+</html>

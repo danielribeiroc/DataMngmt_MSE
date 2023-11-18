@@ -10,6 +10,10 @@ class GenerateTrainNetwork:
     def close(self):
         self.driver.close()
 
+    def clear_database(self):
+        with self.driver.session() as session:
+            session.execute_write(self._clear_database)
+
     def create_cities(self):
         cities = pd.read_csv('data/cities.csv', sep=';')
         for index, row in cities.iterrows():
@@ -59,13 +63,20 @@ class GenerateTrainNetwork:
         result = tx.run(query, city1=city1, city2=city2, km=km, time=time, nbTracks=nbTracks)
         print(f"Created Railway Line from {city1} to {city2}")
 
+    @staticmethod
+    def _clear_database(tx):
+        query = "MATCH (n) DETACH DELETE n"
+        tx.run(query)
+        print("Cleared Database")
+
 
 if __name__ == "__main__":
     uri = "neo4j://localhost:7687"
     generate_train_network = GenerateTrainNetwork(uri)
 
-    # create all city nodes
-    generate_train_network.create_cities()
+    generate_train_network.clear_database()  # Clear data
 
-    # create all railway lines
-    generate_train_network.create_railway_lines()
+    generate_train_network.create_cities() # create all city nodes
+
+    generate_train_network.create_railway_lines() # create all railway lines
+    generate_train_network.close()
