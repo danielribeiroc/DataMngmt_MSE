@@ -250,11 +250,11 @@ if __name__ == "__main__":
     center_switzerland = [46.800663464, 8.222665776]
 
     # display cities on the map
-    #display_train_network.display_cities()
-    #display_train_network.display_train_network_2_1()
-    #display_train_network.display_cities_2_2()
-    #display_train_network.display_shortest_path_km()
-    #display_train_network.display_shortest_path_minutes()
+    display_train_network.display_cities()
+    display_train_network.display_train_network_2_1()
+    display_train_network.display_cities_2_2()
+    display_train_network.display_shortest_path_km()
+    display_train_network.display_shortest_path_minutes()
     display_train_network.add_costs_to_railways()
     display_train_network.display_minimum_spanning_tree()
     display_train_network.close()
