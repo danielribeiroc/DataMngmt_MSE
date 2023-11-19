@@ -1,4 +1,6 @@
-from neo4j import GraphDatabase
+import neo4j
+
+from neo4j import GraphDatabase, WRITE_ACCESS
 import folium
 
 
@@ -170,7 +172,76 @@ class DisplayTrainNetwork:
 
         if len(locations) > 1:
             display_polyline_on_map(m=m, locations=locations, color="#ff0000", weight=3.0) # draw lines
-# ---------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------- EXO 2.4 --------------------------------------------------------------------------
+
+    def add_costs_to_railways(self):
+        with self.driver.session(default_access_mode=neo4j.WRITE_ACCESS) as session:
+            session.execute_write(self._add_costs_to_railways)
+
+    @staticmethod
+    def _add_costs_to_railways(tx):
+        query = (
+            """
+            MATCH (c1:City)-[r:RAILWAY]->(c2:City)
+            SET r.cost = r.km * r.nbTracks * 1000000
+            RETURN c1, c2, r.cost
+            """
+        )
+        result = tx.run(query)
+        for record in result:
+            print(
+                f"Updated Railway Line from {record['c1']['name']} to {record['c2']['name']} with cost: {record['r.cost']}")
+
+    def display_minimum_spanning_tree(self):
+        map_1 = folium.Map(location=center_switzerland, zoom_start=8)
+        with self.driver.session(default_access_mode=neo4j.WRITE_ACCESS) as session:
+            session.execute_read(self._display_cities, map_1)
+            session.execute_read(self._display_railway_lines_2_1, map_1)
+            session.execute_write(self._display_minimum_spanning_tree, map_1)
+        map_1.save('out/2.4.html')
+
+    @staticmethod
+    def _display_minimum_spanning_tree(tx, m): # TODO --> create the spanning tree that will retrieve what i need
+        # Exécution de la requête MST
+        query_mst = (
+            """
+            MATCH (n:City {name: 'Geneve'})
+                CALL gds.alpha.spanningTree.minimum.write({
+                  nodeProjection: 'City',
+                  relationshipProjection: {
+                    RAILWAY: {
+                      type: 'RAILWAY',
+                      properties: 'cost',
+                      orientation: 'UNDIRECTED'
+                    }
+                  },
+                  startNodeId: id(n),
+                  relationshipWeightProperty: 'cost',
+                  writeProperty: 'MINST',
+                  weightWriteProperty: 'writeCost'
+                })
+                YIELD createMillis, computeMillis, writeMillis, effectiveNodeCount
+                RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount;
+            """
+        )
+        tx.run(query_mst)
+
+        # Récupérer les relations de l'arbre couvrant
+        query_retrieve = (
+            """
+            MATCH (c1:City)-[r:MINST]->(c2:City) 
+            RETURN c1.name, c1.latitude, c1.longitude, c2.name, c2.latitude, c2.longitude
+            """
+        )
+        result = tx.run(query_retrieve)
+
+        # Afficher les lignes de l'arbre couvrant sur la carte
+        for record in result:
+            city1_coords = (record['c1.latitude'], record['c1.longitude'])
+            city2_coords = (record['c2.latitude'], record['c2.longitude'])
+            locations = [city1_coords, city2_coords]
+            popup_text = f"MST Railway: {record['c1.name']} to {record['c2.name']}"
+            display_polyline_on_map(m=m, locations=locations, popup=popup_text, color="#ff0000", weight=3.0)
 
 
 if __name__ == "__main__":
@@ -179,9 +250,11 @@ if __name__ == "__main__":
     center_switzerland = [46.800663464, 8.222665776]
 
     # display cities on the map
-    display_train_network.display_cities()
-    display_train_network.display_train_network_2_1()
-    display_train_network.display_cities_2_2()
-    display_train_network.display_shortest_path_km()
-    display_train_network.display_shortest_path_minutes()
+    #display_train_network.display_cities()
+    #display_train_network.display_train_network_2_1()
+    #display_train_network.display_cities_2_2()
+    #display_train_network.display_shortest_path_km()
+    #display_train_network.display_shortest_path_minutes()
+    display_train_network.add_costs_to_railways()
+    display_train_network.display_minimum_spanning_tree()
     display_train_network.close()
