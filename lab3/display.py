@@ -201,7 +201,7 @@ class DisplayTrainNetwork:
         map_1.save('out/2.4.html')
 
     @staticmethod
-    def _display_minimum_spanning_tree(tx, m): # TODO --> create the spanning tree that will retrieve what i need
+    def _display_minimum_spanning_tree(tx, m):
         # Exécution de la requête MST
         query_mst = (
             """
