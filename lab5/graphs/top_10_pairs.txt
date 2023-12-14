@@ -1,0 +1,10 @@
+('Google Phone', 'USB-C Charging Cable') : 927
+('Lightning Charging Cable', 'iPhone') : 914
+('Wired Headphones', 'iPhone') : 415
+('Google Phone', 'Wired Headphones') : 355
+('Apple Airpods Headphones', 'iPhone') : 351
+('USB-C Charging Cable', 'Vareebadd Phone') : 298
+('Bose SoundSport Headphones', 'Google Phone') : 202
+('USB-C Charging Cable', 'Wired Headphones') : 154
+('Lightning Charging Cable', 'Wired Headphones') : 135
+('Vareebadd Phone', 'Wired Headphones') : 124
